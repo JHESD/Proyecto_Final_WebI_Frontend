@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../../css/admin/admin_home.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+          <div class="container hero">
+            <div class="container-logo">
+              <i class="fa-solid fa-mug-hot"></i>
+              <h1 class="logo"><a href="../admin/admin_home.html">Sazón y Sabor</a></h1>
+              <i class="fa-solid fa-bowl-food"></i>
+            </div>
+  
+            <div class="container-user" id="btn-salir">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container-navbar">
+          <nav class="navbar container">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="menu">
+              <li><a id="productList" href="#">Productos</a></li>
+              <li><a id="pedidosList" href="../admin/pedidos_admin.html">Pedidos</a></li>
+              <li><a href="#">Estadisticas</a></li>
+            </ul>
+  
+            <form class="search-form">
+              <input type="search" placeholder="Buscar..." />
+              <button class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </nav>
+        </div>
+    </header>
+    
+    <!-- |Carusel de Imagenes - Inicio| -->
+    <div class="slider">
+      <div class="list">
+        <div class="item">
+          <img src="../../Img/comida.jpg">
+        </div>
+        <div class="item">
+          <img src="../../Img/comida1.jpg">
+        </div>
+        <div class="item">
+          <img src="../../Img/comida2.jpg">
+        </div>
+        <div class="item">
+          <img src="../../Img/comida3.jpg">
+        </div>
+        <div class="item">
+          <img src="../../Img/hamburguesa.jpeg">
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+
+      <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>      
+
+    <!-- |Productos destacados - Inicio| -->
+    <section class="container top-products">
+      <h1 class="heading-1">Mis Productos Destacados</h1>
+
+      <div class="container-products">
+        <!-- Producto 1 -->
+
+      </div>
+    </section>
+
+
+    <!-- |------------------------------------------------------------------------------------------------------------------------| -->
+    <!-- |Script js y icoon - Inicio| -->
+    <script src="../../Js/admin/admin_home.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/0ff56069bf.js" crossorigin="anonymous"></script>
+</body>
+</html>

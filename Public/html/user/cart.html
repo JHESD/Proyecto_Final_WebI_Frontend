@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carito</title>
+    <link rel="stylesheet" href="../../css/user/cart.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+          <div class="container hero">
+            <div class="container-logo">
+              <i class="fa-solid fa-mug-hot"></i>
+              <h1 class="logo"><a href="../user/user_home.html">Sazón y Sabor</a></h1>
+              <i class="fa-solid fa-bowl-food"></i>
+            </div>
+  
+            <div class="container-user">
+              <i class="fa-solid fa-user"></i>
+              <i class="fa-solid fa-basket-shopping"></i>
+              <div class="content-shopping-cart">
+                  <span class="text">Carrito</span>
+                  <span class="number">(0)</span>
+              </div>
+          </div>
+          </div>
+        </div>
+  
+        <div class="container-navbar">
+          <nav class="navbar container">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="menu">
+              <li><a id="productList" href="#">Productos</a></li>
+              <li><a href="#">Recibos</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+  
+            <form class="search-form">
+              <input type="search" placeholder="Buscar..." />
+              <button class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-cart">
+            <h2>Tu Carrito</h2>
+            <table id="cartTable">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los productos se cargarán dinámicamente -->
+                </tbody>
+            </table>
+            <div class="cart-total">
+                <h3>Total: <span id="cartTotal">0.00</span> bs.</h3>
+                <button id="confirmPurchaseBtn">Confirmar Compra</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../js/user/cart_user.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/0ff56069bf.js" crossorigin="anonymous"></script>
+</body>
+</html>

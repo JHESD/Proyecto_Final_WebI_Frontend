@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="../../css/admin/pedido_admin.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+
+                <div class="container-logo">
+                <i class="fa-solid fa-mug-hot"></i>
+                <h1 class="logo"><a href="../user/user_home.html">Sazón y Sabor</a></h1>
+                <i class="fa-solid fa-bowl-food"></i>
+                </div>
+
+                <div class="container-user">
+                    <div id="btn-salir">
+                        <i class="fa-solid fa-user"></i>
+                    </div>                
+            </div>
+            </div>
+
+            <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                <li><a id="productList" href="#">Productos</a></li>
+                <li><a id="pedidosList" href="../admin/pedidos_admin.html">Pedidos</a></li>
+                <li><a href="#">Blog</a></li>
+                </ul>
+
+                <form class="search-form">
+                <input type="search" placeholder="Buscar..." />
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                </form>
+            </nav>
+        </div>
+        <h1>Pedidos Realizados</h1>
+    </header>
+
+    <main>
+        <div id="admin-order-list" class="order-list">
+            <!-- Las órdenes se cargarán aquí dinámicamente -->
+        </div>
+    </main>
+
+    <script src="../../js/admin/pedidos_admin.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/0ff56069bf.js" crossorigin="anonymous"></script> 
+</body>
+</html>

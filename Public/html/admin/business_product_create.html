@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/admin/business_product_edit.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+          <div class="container hero">
+            <div class="container-logo">
+              <i class="fa-solid fa-mug-hot"></i>
+              <h1 class="logo"><a href="../admin/admin_home.html">Sazón y Sabor</a></h1>
+              <i class="fa-solid fa-bowl-food"></i>
+            </div>
+  
+            <div class="container-user">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container-navbar">
+          <nav class="navbar container">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="menu">
+              <li><a id="productList" href="#">Productos</a></li>
+              <li><a href="#">Pedidos</a></li>
+              <li><a href="#">Estadisticas</a></li>
+            </ul>
+  
+            <form class="search-form">
+              <input type="search" placeholder="Buscar..." />
+              <button class="btn-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </nav>
+        </div>
+    </header>
+
+    <div class="product-detail">
+        <div class="carousel-container">
+          <!-- Campo para subir imágenes -->
+          <label for="product-images"><strong>Imágenes del Producto:</strong></label>
+          <input type="file" id="product-images" name="imagenes" multiple accept="image/*">
+      
+          <!-- Vista previa de imágenes subidas -->
+          <div class="image-preview" id="image-preview"></div>
+        </div>
+
+        <div class="product-info">
+            <form id="form-update-product" data-product-id="">
+                <label for="product-name"><strong>Nombre del Producto:</strong></label>
+                <input type="text" id="product-name" name="name" placeholder="Nombre del Producto" value="">
+
+                <label for="product-category"><strong>Categoría:</strong></label>
+                <select id="product-category" name="category">
+                  <option value="">Cargando categorías...</option>
+                </select>
+            
+                <label for="product-price"><strong>Precio:</strong></label>
+                <input type="number" id="product-price" name="price" placeholder="Precio" value="" step="0.01">
+            
+                <label for="product-description"><strong>Descripción:</strong></label>
+                <textarea id="product-description" name="description" placeholder="Descripción detallada del producto."></textarea>
+            
+                <div class="product-actions">
+                    <button type="button" class="save-changes" id="btn-save">Guardar Cambios</button>
+                    <button type="button" class="cancel-edit" id="btn-cancel">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../../js/admin/admin_create.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/0ff56069bf.js" crossorigin="anonymous"></script>
+</body>
+</html>

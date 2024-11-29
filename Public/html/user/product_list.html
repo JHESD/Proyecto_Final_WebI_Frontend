@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../../css/user/product_list.css">
+</head>
+<body>
+  <!-- |Navbar - Inicio| -->
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+                <div class="container-logo">
+                <i class="fa-solid fa-mug-hot"></i>
+                <h1 class="logo"><a href="../user/user_home.html">Sazón y Sabor</a></h1>
+                <i class="fa-solid fa-bowl-food"></i>
+                </div>
+
+                <div class="container-user">
+                    <div id="btn-salir">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+
+            <div class="container-navbar">
+                <nav class="navbar container">
+                    <i id="menuToggle" class="fa-solid fa-bars"></i>
+                    <ul class="menu">
+                        <li><a id="productList" href="#">Productos</a></li>
+                        <li><a id="reciboList" href="#">Recibos</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+
+                    <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    </form>
+                </nav>
+        </div>
+    </header>
+
+        <!-- |Productos destacados - Inicio| -->
+    <section class="container top-products">
+        <h1 class="heading-1">Productos Disponibles</h1>
+
+        <div class="filter-categories">
+            <label for="category-select">Filtrar por Categoría:</label>
+            <select id="category-select">
+                <option value="">Todas las Categorías</option>
+            </select>
+        </div>
+
+        <div class="container-products">
+            <!-- Producto 1 -->
+
+        </div>
+    </section>
+    
+    <script src="../../js/user/product_list.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/0ff56069bf.js" crossorigin="anonymous"></script>
+</body>
+</html>

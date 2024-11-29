@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url('../Img/fondologin.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 900px;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Sección izquierda (Iniciar Sesión) */
+.container-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.container-form span {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.social-networks {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.social-networks ion-icon {
+    font-size: 24px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-networks ion-icon:hover {
+    background-color: #c7a17a;
+    color: white;
+    border-color: #c7a17a;
+}
+
+.container-input {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+}
+
+.container-input input {
+    border: none;
+    outline: none;
+    flex: 1;
+    background-color: transparent;
+}
+
+.container-form a {
+    font-size: 12px;
+    color: #c7a17a;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.container-form a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #c7a17a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c7a17a;
+}
+
+/* Sección derecha (Registrarse) */
+.container-register {
+    flex: 1;
+    background-color: #c7a17a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    clip-path: ellipse(95% 100% at 100% 50%);
+    overflow: hidden;
+}
+
+.container-register h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.container-register p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.button-register {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    color: #c7a17a;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.button-register:hover {
+    background-color: #754516;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .container-register {
+        clip-path: none;
+        border-radius: 0 0 15px 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container-form {
+        padding: 20px;
+    }
+
+    .container-input {
+        max-width: 100%;
+    }
+
+    .button,
+    .button-register {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .container-form h2,
+    .container-register h2 {
+        font-size: 24px;
+    }
+
+    .container-form span,
+    .container-register p {
+        font-size: 14px;
+    }
+
+    .container-input {
+        padding: 8px 10px;
+        gap: 5px;
+    }
+
+    .button,
+    .button-register {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

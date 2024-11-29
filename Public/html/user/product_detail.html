@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="../../css/user/product_detail.css">
+</head>
+<body>
+    <header>
+        <div class="container-hero">
+            <div class="container hero">
+
+                <div class="container-logo">
+                <i class="fa-solid fa-mug-hot"></i>
+                <h1 class="logo"><a href="../user/user_home.html">Sazón y Sabor</a></h1>
+                <i class="fa-solid fa-bowl-food"></i>
+                </div>
+
+                <div class="container-user">
+                    <div id="btn-salir">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <div class="content-shopping-cart">
+                        <span class="text">Carrito</span>
+                        <span class="number">(0)</span>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+
+            <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                <li><a id="productList" href="#">Productos</a></li>
+                <li><a href="#">Recibos</a></li>
+                <li><a href="#">Blog</a></li>
+                </ul>
+
+                <form class="search-form">
+                <input type="search" placeholder="Buscar..." />
+                <button class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <div class="product-detail">
+        <div class="carousel-container">
+            <img src="../../IMG/comida.jpg" alt="Producto Principal"> <!-- Imagen principal -->
+            <div class="carousel-images">
+                <!-- Aquí se agregarán dinámicamente imágenes adicionales -->
+            </div>
+        </div>
+    
+        <div class="product-info">
+            <h1>Nombre Producto</h1> <!-- Se actualiza dinámicamente -->
+            <h3>Nombre empresa</h3> <!-- Se actualiza dinámicamente -->
+            <p><strong>Categoría:</strong> Etiquetas</p> <!-- Se actualiza dinámicamente -->
+            <p><strong>Precio:</strong> 00.00 Bs.</p> <!-- Se actualiza dinámicamente -->
+            <p class="product-description">Descripción detallada del producto.</p> <!-- Se actualiza dinámicamente -->
+    
+            <div class="product-actions">
+                <button class="add-to-cart">Añadir al Carrito</button>
+                <button class="favorite-button">♥ Favorito</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="../../js/user/product_detail.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/0ff56069bf.js" crossorigin="anonymous"></script>
+</body>
+</html>
